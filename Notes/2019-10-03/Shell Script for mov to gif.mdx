@@ -17,7 +17,7 @@ All you need is `ffmpeg` which you can install with `brew install ffmpeg`.
 
 The script:
 
-```
+```bash
 for i in *.mov; 
 do ffmpeg -i "$i" -vf scale="1000:-1" -fs 9.5M "${i%.*}.gif"; 
 done
